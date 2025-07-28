@@ -265,8 +265,8 @@
   <div class="message" id="motivational-message"></div>
 
   <div class="footer">
-    🚀 Designed with ❤️ by You + ChatGPT |
-    👁️ Visitors: <span id="visit-count">Loading...</span>
+    🚀 Designed with ❤️ by You + Unknown |
+   
   </div>
 
   <script>
@@ -348,15 +348,7 @@
     highlightCurrentClass();
     setInterval(highlightCurrentClass, 60000);
 
-    // CountAPI visit counter
-    fetch('https://api.countapi.xyz/hit/aiml-class-routine/visits')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('visit-count').textContent = data.value;
-      })
-      .catch(() => {
-        document.getElementById('visit-count').textContent = 'N/A';
-      });
+    
   </script>
 </body>
 </html>
